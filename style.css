@@ -9,6 +9,10 @@
   padding: 0;
   margin: 0;
 }
+
+body{
+ 	background-color: blanchedalmond;
+}
 .simon-body{
 	width: 450px;
     height: 450px;
@@ -87,6 +91,12 @@
     letter-spacing: 2px;
 }
 
+.menu p{
+	position: relative;
+    left: 128px;
+    bottom: 87px;
+}
+
 .start{ 
 	margin-left: 20px; 
 	border-radius: 50%;
@@ -146,9 +156,6 @@
   bottom: 82px;
 }
 
-.switch p{
-	text-align: center;
-}
 
 .switch label {
   width: 100%;

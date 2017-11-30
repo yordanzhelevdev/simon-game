@@ -68,7 +68,7 @@ let game = {
 				pads[3].classList.add('playing');
 			}
 			i++;
-			console.log('This is the computerSteps ' + this.computerSteps);
+			// console.log('This is the computerSteps ' + this.computerSteps);
 			if (i < this.computerSteps.length) {
 				this.playSound(i);
 			} else {
