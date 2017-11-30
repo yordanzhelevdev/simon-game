@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.simon-body{
+	width: 450px;
+    height: 450px;
+	background-color: rgb(51,51,51);
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	border-radius: 100%;
+}
+
+.pad{
+	width:180px;
+    height:180px;
+	position: absolute;
+	opacity: 0.3;
+	-webkit-transition:all 400ms ease;
+    -moz-transition:all 400ms ease;
+    -o-transition:all 400ms ease;
+    transition:all 400ms ease;
+}
+
+.green{
+	background-color: green;
+	top:40px;
+	left: 40px;
+	border-top-left-radius: 100%;
+}
+
+.red{
+	background-color: red;
+	top:40px;
+	right: 40px;
+	border-top-right-radius: 100%;
+}
+
+.yellow{
+	background-color: yellow;
+	bottom: 40px;
+	left: 40px;
+	border-bottom-left-radius: 100%;
+}
+
+.blue{
+	background-color: blue;
+	bottom: 40px;
+	right: 40px;
+	border-bottom-right-radius: 100%;
+}
+
+.pad:hover{
+	cursor: pointer;
+}
+
+.pad:active{
+	opacity: 1.0;
+}
+
+.menu{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   	width: 210px;
+    height: 210px;
+    border: 10px solid rgb(51,51,51);
+    border-radius: 100%;
+    background-color: #e2dada;
+}
+
+.menu h1{
+	text-align: center;
+    margin: 30px 0 0 0;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.start{ 
+	margin-left: 20px; 
+	border-radius: 50%;
+	 width: 45px;
+    height: 45px;
+	position: relative;
+	bottom: 20px;
+	background: #eaeaea;
+  	box-shadow: 
+      0 3px 5px rgba(0,0,0,0.25),
+      inset 0 1px 0 rgba(255,255,255,0.3),
+      inset 0 -5px 5px rgba(100,100,100,0.1),
+      inset 0 5px 5px rgba(255,255,255,0.3);
+      cursor: pointer;
+	border:0;
+}
+
+.start:after{
+	content: "";
+    position: absolute;
+    top: -8%;
+    right: -8%;
+    bottom: -8%;
+    left: -8%;
+    z-index: -1;
+    border-radius: inherit;
+    background: #ddd;
+    background: -moz-linear-gradient(#ccc, #fff);
+    background: -ms-linear-gradient(#ccc, #fff);
+    background: -o-linear-gradient(#ccc, #fff);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ccc), to(#fff));
+    background: -webkit-linear-gradient(#ccc, #fff);
+    background: linear-gradient(#ccc, #fff);
+    box-shadow: inset 0 2px 1px rgba(0,0,0,0.15), 0 2px 5px rgba(200,200,200,0.1);
+}
+
+.start:active{
+	 background: #d2cbc3;
+  box-shadow:
+      inset 0 1px 0 white,
+      0 0 0 1px #999,
+      0 0 5px 1px rgba(0,0,0,0.2),
+      inset 0 -10px 0 #aaa,
+      0 2px 0 rgba(255,255,255,0.1),
+      inset 0 45px 3px #e0e0E0,
+      0 8px 6px rgba(0,0,0,0.18);
+}
+
+
+
+/* Strict button  */
+
+
+.switch {
+  position: relative;
+  left: 125px;
+  bottom: 82px;
+}
+
+.switch p{
+	text-align: center;
+}
+
+.switch label {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+}
+
+.switch input {
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  opacity: 0;
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.switch.demo1 {
+    width: 45px;
+    height: 45px;
+}
+
+.switch.demo1 label {
+  border-radius: 50%;
+  background: #eaeaea;
+  box-shadow: 
+      0 3px 5px rgba(0,0,0,0.25),
+      inset 0 1px 0 rgba(255,255,255,0.3),
+      inset 0 -5px 5px rgba(100,100,100,0.1),
+      inset 0 5px 5px rgba(255,255,255,0.3);
+}
+
+.switch.demo1 label:after {
+  content: "";
+  position: absolute;
+  top: -8%; right: -8%; bottom: -8%; left: -8%;
+  z-index: -1;
+  border-radius: inherit;
+  background: #ddd;
+  background: -moz-linear-gradient(#ccc, #fff);
+  background: -ms-linear-gradient(#ccc, #fff);
+  background: -o-linear-gradient(#ccc, #fff);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ccc), to(#fff));
+  background: -webkit-linear-gradient(#ccc, #fff);
+  background: linear-gradient(#ccc, #fff);
+  box-shadow: 
+    inset 0 2px 1px rgba(0,0,0,0.15),
+    0 2px 5px rgba(200,200,200,0.1);
+}
+
+.switch.demo1 label:before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border-radius: inherit;
+  left: 40%;
+  top: 40%;
+  background: #969696;
+  background: radial-gradient(40% 35%, #ccc, #969696 60%);
+  box-shadow:
+      inset 0 2px 4px 1px rgba(0,0,0,0.3),
+      0 1px 0 rgba(255,255,255,1),
+      inset 0 1px 0 white;
+}
+
+.switch.demo1 input:checked ~ label {
+  background: #dedede;
+  background: -moz-linear-gradient(#dedede, #fdfdfd);
+  background: -ms-linear-gradient(#dedede, #fdfdfd);
+  background: -o-linear-gradient(#dedede, #fdfdfd);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#dedede), to(#fdfdfd));
+  background: -webkit-linear-gradient(#dedede, #fdfdfd);
+  background: linear-gradient(#dedede, #fdfdfd);
+}
+
+.switch.demo1 input:checked ~ label:before {
+  background: #25d025;
+  background: radial-gradient(40% 35%, #5aef5a, #25d025 60%);
+  box-shadow:
+      inset 0 3px 5px 1px rgba(0,0,0,0.1),
+      0 1px 0 rgba(255,255,255,0.4),
+      0 0 10px 2px rgba(0, 210, 0, 0.5);
+}
+
+/* Strict button End */
+
+.playing{
+	opacity: 1.0;
+}
+
+#counter{
+	text-align: center;
+	padding:5px;
+	border: 1px solid black;
+	width:35px;
+	height: 35px;
+	margin:0 auto;
+}
+
+.disabled{
+	pointer-events: none;
+	 cursor:not-allowed;
+}
